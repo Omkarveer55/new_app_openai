@@ -7,6 +7,7 @@ openai.api_key = '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'
 
 message = 'you are the football advisor.'
 
+print("gradio")
 def transcribe(audio):
     audio_file= open(audio, "rb")
     transcript = openai.Audio.transcribe("whisper-1", audio_file)
